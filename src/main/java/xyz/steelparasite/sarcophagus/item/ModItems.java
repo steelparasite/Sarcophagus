@@ -9,7 +9,7 @@ import xyz.steelparasite.sarcophagus.EgyptMod;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(EgyptMod.MODID);
 
-   public static final DeferredItem<Item> PLAYER_HEART = ITEMS.register("player_heart",
+    public static final DeferredItem<Item> PLAYERHEART = ITEMS.register("playerheart",
            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus){
