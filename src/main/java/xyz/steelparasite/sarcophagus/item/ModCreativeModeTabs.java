@@ -3,8 +3,10 @@ package xyz.steelparasite.sarcophagus.item;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import xyz.steelparasite.sarcophagus.Sarcophagus;
 import xyz.steelparasite.sarcophagus.block.ModBlocks;
@@ -24,6 +26,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SCARAB);
                         output.accept(ModItems.GOLDENSCARAB);
                         output.accept(ModItems.GRANITE_SHARD);
+                        output.accept(ModItems.RITUAL_DAGGER);
                         output.accept(ModBlocks.ALTAR_BLOCK);
                     }).build());
 
