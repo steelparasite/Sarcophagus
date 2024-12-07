@@ -20,7 +20,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> ALTAR_BLOCK = registerBlock("altar_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(1.5f,3.0f)
-                    .sound(SoundType.MUD_BRICKS)
+                    .sound(SoundType.COPPER)
                     .mapColor(MapColor.COLOR_LIGHT_GRAY)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
