@@ -12,6 +12,15 @@ public class ModItems {
     public static final DeferredItem<Item> PLAYERHEART = ITEMS.register("playerheart",
            () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> SCARAB = ITEMS.register("scarab",
+           () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> GOLDENSCARAB = ITEMS.register("goldenscarab",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> GRANITE_SHARD = ITEMS.register("granite_shard",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }

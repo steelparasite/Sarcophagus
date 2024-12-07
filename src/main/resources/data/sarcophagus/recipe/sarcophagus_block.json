@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "g": {
+      "item": "sarcophagus:goldenscarab"
+    },
+    "l": {
+      "item": "sarcophagus:limestone_shard"
+    }
+  },
+  "pattern": [
+    " l ",
+    "lal",
+    " l "
+  ],
+  "result": {
+    "count": 1,
+    "id": "sarcophagus:sarcophagus_block"
+  }
+}

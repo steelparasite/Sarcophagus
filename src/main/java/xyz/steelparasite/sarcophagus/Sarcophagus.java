@@ -17,7 +17,6 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
-import xyz.steelparasite.sarcophagus.block.ModBlocks;
 import xyz.steelparasite.sarcophagus.item.ModCreativeModeTabs;
 import xyz.steelparasite.sarcophagus.item.ModItems;
 
@@ -45,7 +44,6 @@ public class Sarcophagus
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
-        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -63,13 +61,6 @@ public class Sarcophagus
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
 
-        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.PLAYERHEART);
-        }
-
-        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS){
-            event.accept(ModBlocks.SARCOPHAGUS_BLOCK);
-        }
 
     }
 

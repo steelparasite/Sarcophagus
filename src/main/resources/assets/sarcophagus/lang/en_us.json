@@ -1,5 +1,7 @@
 {
   "item.sarcophagus.playerheart" : "Player Heart",
-  "block.sarcophagus.sarcophagus_block" : "Sarcophagus Brick",
+  "item.sarcophagus.scarab" : "Scarab",
+  "item.sarcophagus.goldenscarab" : "Golden Scarab",
+  "item.sarcophagus.granite_shard" : "Granite Shard",
   "creativetab.sarcophagus.sarcophagus_items" : "Sarcophagus"
 }
