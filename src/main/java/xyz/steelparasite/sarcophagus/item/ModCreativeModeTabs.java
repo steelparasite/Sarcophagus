@@ -7,6 +7,7 @@ import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import xyz.steelparasite.sarcophagus.Sarcophagus;
+import xyz.steelparasite.sarcophagus.block.ModBlocks;
 
 import java.util.function.Supplier;
 
@@ -23,6 +24,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SCARAB);
                         output.accept(ModItems.GOLDENSCARAB);
                         output.accept(ModItems.GRANITE_SHARD);
+                        output.accept(ModBlocks.ALTAR_BLOCK);
                     }).build());
 
     public static void  register(IEventBus eventBus){

@@ -3,5 +3,6 @@
   "item.sarcophagus.scarab" : "Scarab",
   "item.sarcophagus.goldenscarab" : "Golden Scarab",
   "item.sarcophagus.granite_shard" : "Granite Shard",
+  "block.sarcophagus.altar_block" : "Altar Brick",
   "creativetab.sarcophagus.sarcophagus_items" : "Sarcophagus"
 }
