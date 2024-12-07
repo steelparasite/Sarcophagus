@@ -17,11 +17,12 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import xyz.steelparasite.sarcophagus.block.ModBlocks;
 import xyz.steelparasite.sarcophagus.item.ModItems;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
-@Mod(EgyptMod.MODID)
-public class EgyptMod
+@Mod(Sarcophagus.MODID)
+public class Sarcophagus
 {
     // Define mod id in a common place for everything to reference
     public static final String MODID = "sarcophagus";
@@ -30,7 +31,7 @@ public class EgyptMod
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
-    public EgyptMod(IEventBus modEventBus, ModContainer modContainer)
+    public Sarcophagus(IEventBus modEventBus, ModContainer modContainer)
     {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -41,6 +42,7 @@ public class EgyptMod
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -57,8 +59,15 @@ public class EgyptMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)
+
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.PLAYERHEART);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS){
+            event.accept(ModBlocks.SARCOPHAGUS_BLOCK);
+        }
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
